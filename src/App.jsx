@@ -1,9 +1,10 @@
 import './index.css'
+import Home from './pages/Home'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-black flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Bienvenue dans le Portfolio</h1>
+    <div>
+      <Home />
     </div>
   );
 }

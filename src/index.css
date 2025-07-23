@@ -1,1 +1,77 @@
+/* Polices personnalisées */
+@font-face {
+  font-family: 'NADALL';
+  src: url('./assets/fonts/NADALL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ModernAntiqua';
+  src: url('./assets/fonts/ModernAntiqua.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
+
+@theme {
+  --font-family-title: 'NADALL';
+  --font-family-text: 'ModernAntiqua';
+}
+
+/* Classes utilitaires pour les polices */
+.font-title {
+  font-family: 'NADALL';
+}
+
+.font-text {
+  font-family: 'ModernAntiqua';
+  letter-spacing: 0.5px;
+}
+
+/* Styles pour l'effet de retournement des cartes projets */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Optimisations pour mobile */
+@media (max-width: 640px) {
+  .font-title {
+    letter-spacing: -0.5px;
+  }
+  
+  .font-text {
+    letter-spacing: 0.25px;
+  }
+}
+
+/* Amélioration de l'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
