@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
 
       {/* Menu mobile */}
-      <div className={`lg:hidden absolute top-16 left-0 w-full bg-gradient-to-b from-blue-950 via-cyan-800 to-white/10 bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}> 
+      <div className={`lg:hidden absolute top-16 left-0 w-full bg-gradient-to-b from-blue-950 via-sky-700 to-white/10 bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}> 
         <div className="flex flex-col items-center justify-center space-y-1 xs:space-y-2 p-2 xs:p-4 w-full">
           <a 
             href="#about" 

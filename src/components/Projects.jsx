@@ -88,7 +88,7 @@ const Projects = () => {
           </div>
         </div>
         {/* Grille desktop/tablette */}
-        <div className="hidden sm:grid gap-2 xs:gap-4 sm:gap-6 lg:gap-8 mt-4 sm:mt-0 " style={{ gridTemplateColumns: getGridClass().replace('grid-cols-', 'repeat(').replace(/ /g, ', 1fr') + ')' }}>
+        <div className={`hidden sm:grid gap-2 xs:gap-4 sm:gap-6 lg:gap-8 mt-4 sm:mt-0 ${getGridClass()}`}>
           {projects.map((proj, index) => (
             <div key={index} className="group perspective-1000 w-full h-56 xs:h-72 sm:h-80 lg:h-96 xl:h-110">
               <div 
