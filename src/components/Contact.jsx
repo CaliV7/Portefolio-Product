@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-12 sm:py-16 overflow-hidden">
+    <section id="contact" className="relative py-8 xs:py-12 sm:py-16 overflow-hidden">
       {/* Background gradient avec effets de vagues colorées */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-cyan-700 to-teal-200">
         {/* Vague 1 - vague principale du haut */}
@@ -106,15 +106,15 @@ const Contact = () => {
       </div>
       
       {/* Contenu */}
-      <div className="relative z-10 mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-48">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 sm:mb-12 font-title text-center text-white after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-white after:mt-4 after:mx-auto">
+      <div className="relative z-10 mx-auto px-2 xs:px-4 sm:px-6 md:px-8 lg:px-16 xl:px-48">
+        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 xs:mb-8 sm:mb-12 font-title text-center text-white after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-white after:mt-2 xs:after:mt-4 after:mx-auto">
           Contact
         </h2>
         
-        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12">
+        <div className="flex flex-col lg:flex-row gap-4 xs:gap-8 sm:gap-12">
           {/* Photo - prend toute la hauteur à gauche */}
-          <div className="lg:w-2/5 lg:sticky lg:top-0 order-2 lg:order-1">
-            <div className="relative h-full min-h-[400px] sm:min-h-[500px] lg:min-h-0">
+          <div className="lg:w-2/5 lg:sticky lg:top-0 order-2 lg:order-1 hidden lg:block">
+            <div className="relative h-40 xs:h-60 sm:h-full min-h-[180px] xs:min-h-[300px] sm:min-h-[400px] lg:min-h-0">
               <img
                 src="/about-pic-men.jpeg"
                 alt="Malcom Jager"
@@ -124,17 +124,17 @@ const Contact = () => {
           </div>
           
           {/* Formulaire et infos de contact à droite */}
-          <div className="lg:w-3/5 space-y-6 sm:space-y-8 order-1 lg:order-2">
+          <div className="lg:w-3/5 space-y-4 xs:space-y-6 sm:space-y-8 order-1 lg:order-2">
             {/* Formulaire de contact */}
-            <div className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-lg shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 font-title text-white">
+            <div className="bg-white/10 backdrop-blur-sm p-3 xs:p-6 sm:p-8 rounded-lg shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <h3 className="text-lg xs:text-xl sm:text-2xl font-bold mb-2 xs:mb-4 sm:mb-6 font-title text-white">
                 Envoyez-moi un message
               </h3>
               
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="space-y-2 xs:space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 xs:gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-white/90 mb-2 font-text">
+                    <label htmlFor="name" className="block text-xs xs:text-sm font-medium text-white/90 mb-1 xs:mb-2 font-text">
                       Nom complet
                     </label>
                     <input
@@ -144,13 +144,13 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent font-text transition-all duration-300 text-white placeholder-white/60 text-sm sm:text-base"
+                      className="w-full px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent font-text transition-all duration-300 text-white placeholder-white/60 text-xs xs:text-sm sm:text-base"
                       placeholder="Votre nom complet"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-white/90 mb-2 font-text">
+                    <label htmlFor="email" className="block text-xs xs:text-sm font-medium text-white/90 mb-1 xs:mb-2 font-text">
                       Email
                     </label>
                     <input
@@ -160,14 +160,14 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent font-text transition-all duration-300 text-white placeholder-white/60 text-sm sm:text-base"
+                      className="w-full px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent font-text transition-all duration-300 text-white placeholder-white/60 text-xs xs:text-sm sm:text-base"
                       placeholder="votre.email@exemple.com"
                     />
                   </div>
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-white/90 mb-2 font-text">
+                  <label htmlFor="message" className="block text-xs xs:text-sm font-medium text-white/90 mb-1 xs:mb-2 font-text">
                     Message
                   </label>
                   <textarea
@@ -177,14 +177,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows="4"
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent resize-none font-text transition-all duration-300 text-white placeholder-white/60 text-sm sm:text-base"
+                    className="w-full px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 sm:py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent resize-none font-text transition-all duration-300 text-white placeholder-white/60 text-xs xs:text-sm sm:text-base"
                     placeholder="Votre message..."
                   />
                 </div>
                 
                 <button
                   type="submit"
-                  className="w-full bg-white text-blue-900 uppercase px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-white/90 transition-all duration-300 font-medium font-text text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="w-full bg-white text-blue-900 font-title uppercase px-4 xs:px-6 sm:px-8 py-1.5 xs:py-2 sm:py-3 rounded-lg hover:bg-white/90 transition-all duration-300 font-bold text-lg xs:text-xl sm:text-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   Envoyer 
                 </button>
@@ -192,29 +192,29 @@ const Contact = () => {
             </div>
             
             {/* Informations de contact */}
-            <div className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-lg shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 font-title text-white">
+            <div className="bg-white/10 backdrop-blur-sm p-3 xs:p-6 sm:p-8 rounded-lg shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <h3 className="text-base xs:text-lg sm:text-xl font-bold mb-2 xs:mb-4 sm:mb-6 font-title text-white">
                 Informations de contact
               </h3>
               
-              <div className="space-y-4 sm:space-y-6">
-                <div className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-all duration-300">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-white text-lg sm:text-xl">📧</span>
+              <div className="space-y-2 xs:space-y-4 sm:space-y-6">
+                <div className="flex items-center space-x-2 xs:space-x-3 sm:space-x-4 p-2 xs:p-3 sm:p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-all duration-300">
+                  <div className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 bg-white/20 rounded-full flex items-center justify-center shadow-lg">
+                    <span className="text-white text-base xs:text-lg sm:text-xl">📧</span>
                   </div>
                   <div>
-                    <p className="text-xs sm:text-sm text-white/70 font-text">Email</p>
-                    <p className="text-white font-medium font-text text-sm sm:text-base">Laminmalcolm12@gmail.com</p>
+                    <p className="text-xs xs:text-sm text-blue-900 font-text">Email</p>
+                    <p className="text-white font-medium font-text text-xs xs:text-sm sm:text-base">Laminmalcolm12@gmail.com</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-all duration-300">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-white text-lg sm:text-xl">📱</span>
+                <div className="flex items-center space-x-2 xs:space-x-3 sm:space-x-4 p-2 xs:p-3 sm:p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-all duration-300">
+                  <div className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 bg-white/20 rounded-full flex items-center justify-center shadow-lg">
+                    <span className="text-white text-base xs:text-lg sm:text-xl">📱</span>
                   </div>
                   <div>
-                    <p className="text-xs sm:text-sm text-white/70 font-text">Téléphone</p>
-                    <p className="text-white font-medium font-text text-sm sm:text-base">+33 6 XX XX XX XX</p>
+                    <p className="text-xs xs:text-sm text-blue-900 font-text">Téléphone</p>
+                    <p className="text-white font-medium font-text text-xs xs:text-sm sm:text-base">+33 6 XX XX XX XX</p>
                   </div>
                 </div>
               </div>
