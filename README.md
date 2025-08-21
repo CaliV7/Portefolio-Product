@@ -1,63 +1,72 @@
-# PortFolio - Malcom Jager
+# Portfolio Malcom Lamin - Créateur de Contenu Digital
 
-Portfolio professionnel de Malcom Jager, créateur de contenu digital spécialisé dans la mise en valeur d'artisans et d'artistes polynésiens.
+Portfolio professionnel de Malcom Lamin, créateur de contenu digital spécialisé dans la mise en valeur d'artisans et d'artistes polynésiens.
 
-## 🚀 Challenge Personnel
+## 🎯 Challenge Personnel Réussi
 
-Ce projet a été réalisé dans le cadre d'un **challenge personnel** : créer un portfolio complet et responsive en **moins de 24 heures**.
+Ce projet est né d'un **challenge personnel ambitieux** : créer un portfolio complet et fonctionnel en **moins de 24 heures**.
 
-**Objectif :** Tester mes capacités de développement rapide et ma maîtrise des technologies modernes (React, Tailwind CSS, Vite).
+**Objectif :** Tester mes capacités de développement rapide et ma maîtrise des technologies modernes (React, Tailwind CSS).
 
-**Résultat :** ✅ Challenge réussi ! Portfolio fonctionnel et responsive créé en moins de 24h.
+**Résultat :** ✅ **Challenge réussi !** Le portfolio a été créé en moins de 24h. Suite à la présentation du prototype, le client a été suffisamment impressionné pour valider le projet et a décidé de collaborer pour finaliser et déployer le site.
 
 ---
 
 ## 🚀 Fonctionnalités
 
-- **Design responsive** optimisé pour mobile, tablette et desktop
-- **Navigation fluide** avec menu hamburger sur mobile
-- **Animations interactives** sur les cartes de projets
-- **Formulaire de contact** fonctionnel
-- **Sections détaillées** : À propos, Projets, Services, Contact
-- **Liens vers réseaux sociaux** (Instagram, TikTok)
+### **Interface Utilisateur**
+- **Design responsive** optimisé pour tous les appareils
+- **Navigation fluide** avec menu hamburger animé sur mobile
+- **Animations interactives** sur les cartes de projets (effet de retournement)
+- **Formulaire de contact** fonctionnel avec validation
+- **Sections complètes** : Hero, À propos, Projets, Services, Contact, Réseaux sociaux
+
+### **Expérience Utilisateur**
+- **Carrousel horizontal** sur mobile/tablette pour les projets
+- **Grille adaptative** sur desktop selon le nombre de projets
+- **Effets de survol** et transitions fluides
+- **Optimisation des performances** avec Vite
 
 ## 📱 Responsive Design
 
 Le site est entièrement optimisé pour tous les appareils :
 
-- **Mobile** (< 640px) : Navigation hamburger, layout adapté
-- **Tablette** (640px - 1024px) : Grilles adaptatives, tailles de texte optimisées
-- **Desktop** (> 1024px) : Layout complet avec toutes les fonctionnalités
+- **Mobile** (< 640px) : Navigation hamburger, carrousel horizontal
+- **Tablette** (640px - 1024px) : Layout en colonne unique, carrousel horizontal
+- **Desktop** (> 1024px) : Grille adaptative, navigation complète
 
-### Breakpoints utilisés :
-- `xs`: 475px
-- `sm`: 640px
-- `md`: 768px
-- `lg`: 1024px
-- `xl`: 1280px
-- `2xl`: 1536px
+## 🛠️ Stack Technique
 
-## 🛠️ Technologies utilisées
-
-- **React 19** - Framework frontend
-- **Vite** - Build tool et dev server
+### **Frontend**
+- **React 19** - Framework moderne avec hooks et composants fonctionnels
+- **Vite** - Build tool ultra-rapide et dev server
 - **Tailwind CSS 4** - Framework CSS avec configuration personnalisée
 - **JavaScript ES6+** - Fonctionnalités modernes
 
+### **Architecture**
+- **Composants modulaires** et réutilisables
+- **Gestion d'état locale** avec React hooks
+- **CSS personnalisé** avec polices custom (NADALL, ModernAntiqua)
+- **Optimisation des images** et assets
+
 ## 🎨 Design System
 
-### Polices
-- **NADALL** - Titres et éléments de navigation
-- **ModernAntiqua** - Texte de contenu
+### **Identité Visuelle**
+- **Dégradés cyan/bleu** pour l'identité aquatique
+- **Polices custom** : NADALL (titres) et ModernAntiqua (contenu)
 
-### Couleurs
-- Dégradés cyan/bleu pour l'identité visuelle
-- Blanc et gris pour le contenu
-- Accents en bleu ciel pour les éléments interactifs
+### **Composants**
+- **Cartes interactives** avec effet 3D
+- **Boutons stylisés** avec effets de survol
+- **Navigation responsive** avec animations
+- **Formulaires modernes** avec validation
 
-## 📦 Installation et développement
+## 📦 Installation & Développement
 
 ```bash
+# Cloner le projet
+git clone [repository-url]
+
 # Installer les dépendances
 npm install
 
@@ -71,7 +80,7 @@ npm run build
 npm run preview
 ```
 
-## 📁 Structure du projet
+## 📁 Architecture du Projet
 
 ```
 src/
@@ -86,34 +95,36 @@ src/
 │   └── Footer.jsx      # Pied de page
 ├── data/
 │   └── projects.js     # Données des projets
-├── assets/
-│   └── fonts/          # Polices personnalisées
+├── assets/             # Images et polices personnalisées
 ├── pages/
-│   └── Home.jsx        # Page principale
-└── index.css           # Styles globaux
+│   └── Home.jsx        # Page principale orchestrant les composants
+└── index.css           # Styles globaux et utilitaires
 ```
 
-## 🌟 Fonctionnalités clés
+## 🌟 Fonctionnalités Techniques
 
-### Navigation
-- Menu hamburger animé sur mobile
-- Navigation fluide entre les sections
+### **Navigation**
+- Menu hamburger animé sur mobile/tablette
+- Navigation fluide avec scroll smooth
 - Indicateurs visuels pour l'état actif
+- Navbar fixe avec gestion du scroll
 
-### Projets
-- Cartes interactives avec effet de retournement
-- Grille responsive adaptée au nombre de projets
+### **Projets**
+- **Mobile/Tablette** : Carrousel horizontal avec swipe
+- **Desktop** : Grille adaptative (1-3 colonnes selon le nombre de projets)
+- Cartes interactives avec effet de retournement 3D
 - Images optimisées avec overlay de texte
 
-### Services
+### **Services**
 - Tarification claire et organisée
 - Formules mensuelles avec mise en avant du Premium
 - Layout adaptatif pour tous les écrans
 
-### Contact
+### **Contact**
 - Formulaire fonctionnel avec validation
-- Design moderne avec effets de vagues
+- Design moderne avec effets de vagues SVG
 - Informations de contact bien visibles
+- Responsive design optimisé
 
 ## 📞 Contact
 
@@ -123,4 +134,4 @@ src/
 
 ---
 
-*Développé avec ❤️ par Coconuuut*
+*Développé avec passion par Coconuuut 🥥*

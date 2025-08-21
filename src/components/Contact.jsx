@@ -106,8 +106,8 @@ const Contact = () => {
       </div>
       
       {/* Contenu */}
-      <div className="relative z-10 mx-auto px-2 xs:px-4 sm:px-6 md:px-8 lg:px-16 xl:px-48">
-        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 xs:mb-8 sm:mb-12 font-title text-center text-white after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-white after:mt-2 xs:after:mt-4 after:mx-auto">
+      <div className="relative z-10 mx-auto px-2 xs:px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-48">
+        <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 xs:mb-8 sm:mb-12 font-title text-center text-white after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-white after:mt-2 xs:after:mt-4 after:mx-auto">
           Contact
         </h2>
         
