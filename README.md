@@ -125,13 +125,6 @@ src/
 - Design moderne avec effets de vagues SVG
 - Informations de contact bien visibles
 - Responsive design optimisé
-
-## 📞 Contact
-
-- **Email** : Laminmalcom12@gmail.com
-- **Instagram** : [@malcomjager](https://www.instagram.com/malcomjager/)
-- **TikTok** : [@malcomjager](https://www.tiktok.com/@malcomjager)
-
 ---
 
 *Développé avec passion par Coconuuut 🥥*
