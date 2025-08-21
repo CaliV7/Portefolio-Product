@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-l from-cyan-700 via-blue-900 to-blue-950 font-title text-white shadow-md fixed top-0 w-full h-16 z-50">
       <div className="container mx-auto px-2 sm:px-4 py-2 sm:py-3 flex justify-between items-center h-full">
-        <h1 className="text-lg xs:text-xl sm:text-2xl font-bold truncate max-w-[60vw] xs:max-w-[70vw]">Malcolm Jager</h1>
+        <h1 className="text-lg xs:text-xl sm:text-2xl font-bold truncate max-w-[60vw] xs:max-w-[70vw]">Malcom lamin</h1>
         
         {/* Menu hamburger pour mobile */}
         <button

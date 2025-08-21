@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className="py-8 xs:py-12 sm:py-16 bg-white px-2 xs:px-4 sm:px-6 md:px-8 lg:px-16 xl:px-48">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 xs:mb-4 sm:mb-8 font-title text-left lg:text-center after:content-[''] after:block after:w-1/2 after:h-[1.5px] after:bg-black after:mt-2 xs:after:mt-3 mx-auto lg:mx-0">
+        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 xs:mb-4 sm:mb-8 font-title text-center lg:text-left after:content-[''] after:block after:w-1/2 after:h-[1.5px] after:bg-black after:mt-2 xs:after:mt-3 after:mx-auto lg:after:mx-0">
           À propos de TuMac
         </h2>
         <div className="flex flex-col items-center gap-4 xs:gap-6 sm:gap-8 lg:grid lg:grid-cols-3 lg:items-center lg:gap-12">
@@ -30,7 +30,7 @@ const About = () => {
             <div className="flex justify-center order-1 lg:order-2 lg:col-span-1 w-full">
                 <div className="relative w-32 xs:w-40 sm:w-48 md:w-56 lg:w-full max-w-[180px] xs:max-w-xs sm:max-w-sm lg:max-w-sm mx-auto">
                     <img 
-                        src="/about-pic-men.jpeg" 
+                        src="/about-pic-men.png" 
                         alt="TuMac" 
                         className="w-full h-auto object-cover rounded-lg shadow-lg mx-auto" 
                     />

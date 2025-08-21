@@ -117,7 +117,7 @@ src/
 
 ## 📞 Contact
 
-- **Email** : Laminmalcolm12@gmail.com
+- **Email** : Laminmalcom12@gmail.com
 - **Instagram** : [@malcomjager](https://www.instagram.com/malcomjager/)
 - **TikTok** : [@malcomjager](https://www.tiktok.com/@malcomjager)
 

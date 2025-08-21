@@ -40,7 +40,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-8 xs:py-12 sm:py-16 px-2 xs:px-4 sm:px-6 md:px-8 lg:px-16 xl:px-48 bg-gradient-to-tl from-teal-200 via-cyan-700 to-blue-900">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold mb-4 xs:mb-8 sm:mb-12 text-white text-left after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-white after:mt-2 xs:after:mt-4">
+        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold mb-4 xs:mb-8 sm:mb-12 text-white text-center lg:text-left after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-white after:mt-2 xs:after:mt-4 after:mx-auto lg:after:mx-0">
           Projets & Créations
         </h2>
         {/* Carrousel mobile */}

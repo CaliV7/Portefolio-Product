@@ -5,7 +5,7 @@ const SocialLink = () => {
     <section className="py-12 sm:py-16 bg-white px-4 sm:px-6 md:px-8 lg:px-16 xl:px-48">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-title text-black mb-3 sm:mb-4 after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-black after:mt-4 after:mx-auto">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-title text-black mb-3 sm:mb-4 after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-black after:mt-4 after:mx-auto">
             Réseaux sociaux
           </h2>
           <p className="text-gray-600 text-sm sm:text-base font-text">

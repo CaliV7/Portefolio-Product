@@ -21,7 +21,7 @@ const Contact = () => {
     const subject = `Message de ${formData.name}`;
     const body = `Nom: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
     
-    const mailtoLink = `mailto:Laminmalcolm12@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:Laminmalcom12@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Ouvrir le client email par défaut
     window.open(mailtoLink);
@@ -116,7 +116,7 @@ const Contact = () => {
           <div className="lg:w-2/5 lg:sticky lg:top-0 order-2 lg:order-1 hidden lg:block">
             <div className="relative h-40 xs:h-60 sm:h-full min-h-[180px] xs:min-h-[300px] sm:min-h-[400px] lg:min-h-0">
               <img
-                src="/about-pic-men.jpeg"
+                src="/about-pic-men.png"
                 alt="Malcom Jager"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />
@@ -204,7 +204,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-xs xs:text-sm text-blue-900 font-text">Email</p>
-                    <p className="text-white font-medium font-text text-xs xs:text-sm sm:text-base">Laminmalcolm12@gmail.com</p>
+                    <p className="text-white font-medium font-text text-xs xs:text-sm sm:text-base">Laminmalcom12@gmail.com</p>
                   </div>
                 </div>
                 

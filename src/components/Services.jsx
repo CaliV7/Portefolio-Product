@@ -55,13 +55,13 @@ const Services = () => {
   return (
     <section id="services" className="py-8 xs:py-12 sm:py-16 bg-white px-2 xs:px-4 sm:px-6 md:px-8 lg:px-16 xl:px-48">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 xs:mb-8 sm:mb-12 font-title after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-black after:mt-2 xs:after:mt-4">
+        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 xs:mb-8 sm:mb-12 font-title text-center lg:text-left after:content-[''] after:block after:w-1/2 after:h-[1px] after:bg-black after:mt-2 xs:after:mt-4 after:mx-auto lg:after:mx-0">
           Mes services & Tarifs
         </h2>
 
         {/* Services individuels */}
         <div className="mb-8 xs:mb-12 sm:mb-16">
-          <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold mb-4 xs:mb-6 sm:mb-8 font-title text-blue-800">
+          <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold mb-4 xs:mb-6 sm:mb-8 font-title text-blue-800 text-center lg:text-left">
             Services à la carte
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 xs:gap-4 sm:gap-6">
@@ -88,7 +88,7 @@ const Services = () => {
 
         {/* Formules mensuelles */}
         <div>
-          <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold mb-4 xs:mb-6 sm:mb-8 font-title text-blue-800">
+          <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold mb-4 xs:mb-6 sm:mb-8 font-title text-blue-800 text-center lg:text-left">
             Formules mensuelles
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xs:gap-6 sm:gap-8">

@@ -67,6 +67,23 @@
   }
 }
 
+/* Correction pour le scroll avec navbar fixe */
+html {
+  scroll-padding-top: 4rem; /* 64px pour correspondre à la hauteur de la navbar */
+}
+
+@media (min-width: 475px) {
+  html {
+    scroll-padding-top: 4.5rem; /* 72px pour les écrans xs */
+  }
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 4rem; /* Retour à 64px pour sm et plus */
+  }
+}
+
 /* Amélioration de l'accessibilité */
 @media (prefers-reduced-motion: reduce) {
   * {
